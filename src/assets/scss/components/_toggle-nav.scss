@@ -1,0 +1,78 @@
+.toggle-nav {
+  height: 32px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.toggle-nav__decor {
+  height: 3px;
+  width: 24px;
+  margin: auto;
+  position: relative;
+  background-color: $textColor;
+  border-radius: 1px;
+  transition-duration: .2s;
+  transition-delay: .2s;
+
+  &::before,
+  &::after {
+    height: 3px;
+    width: 24px;
+    left: 0;
+    border-radius: 1px;
+    position: absolute;
+    background-color: $textColor;
+    transition-duration: .2s;
+    transition: transform .2s, top .2s .2s;
+    content: '';
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
+  }
+}
+
+.toggle-nav--open .toggle-nav__decor {
+  transition-duration: .1s;
+  transition-delay: .2s;
+  background: 0 0;
+
+  &::after,
+  &::before {
+    top: 0;
+    width: 30px;
+    left: -3px;
+    border-radius: 20px;
+  }
+
+  &::before {
+    transition: top .2s, transform .2s .2s;
+    transform: rotateZ(-45deg);
+  }
+
+  &::after {
+    transition: top .4s, transform .2s .2s;
+    transform: rotateZ(45deg);
+  }
+}
+
+@include media('>=768px') {
+  .toggle-nav {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: -4px;
+  }
+}
+
+@include media('<=767px') {
+  .toggle-nav {
+    width: 42px;
+    margin-right: -8px;
+  }
+}

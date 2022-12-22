@@ -1,0 +1,51 @@
+.panel {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: $bgDarkLight;
+  border: 1px solid $bgDarkLightStroke;
+  box-shadow: 0 15px 45px $bgDark;
+  backdrop-filter: blur(2px);
+}
+
+.panel__wrap {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.panel__logo {
+  margin-right: auto;
+}
+
+.panel__logo-img {
+  max-height: 100%;
+}
+
+@include media('>=768px') {
+  .panel {
+    height: 70px;
+  }
+  .panel__wrap {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@include media('>=1510px') {
+  .panel {
+    display: none;
+  }
+}
+
+@include media('<=767px') {
+  .panel {
+    height: 52px;
+  }
+  .panel__logo {
+    height: 28px;
+  }
+}

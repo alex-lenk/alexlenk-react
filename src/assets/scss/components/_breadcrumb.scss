@@ -1,0 +1,26 @@
+.breadcrumb {
+  margin-bottom: 32px;
+  display: flex;
+  color: $textColor3;
+}
+
+.breadcrumb__item {
+  display: flex;
+
+  &:not(:last-child) {
+    &::after {
+      margin-left: 4px;
+      margin-right: 4px;
+      content: '_';
+    }
+  }
+}
+
+.breadcrumb__link {
+  color: $textColor2;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: $white;
+  }
+}

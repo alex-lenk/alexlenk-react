@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+}
+
+.social__item {
+  &:hover .social__icon {
+    fill: $blue;
+  }
+  &:not(:last-of-type) {
+    margin-right: 16px;
+  }
+}
+
+.social__icon {
+  width: 32px;
+  height: 32px;
+  fill: $primary;
+  margin: auto;
+  transition: fill .2s ease-in-out;
+}

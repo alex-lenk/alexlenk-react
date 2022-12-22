@@ -1,0 +1,126 @@
+.skills {
+  line-height: 1;
+  background-color: $bgDark;
+  border: 1px solid $bgDarkStroke;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.skills__percent {
+  display: none;
+}
+
+.skills__progress {
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    height: 100%;
+    background: $gradient;
+    border-radius: 4px;
+    display: block;
+    content: '';
+  }
+}
+
+.skills__progress-text {
+  position: absolute;
+}
+
+@include media('>=1000px') {
+  .skills {
+    height: 629px;
+    padding: 48px;
+    display: flex;
+  }
+
+  .skills__info {
+    height: 100%;
+    padding-bottom: 34px;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .skills__percent {
+    flex-shrink: 0;
+    margin-right: 71px;
+    padding-bottom: 26px;
+    height: 100%;
+    display: inline-flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      width: 1px;
+      height: 95%;
+      background-color: $black;
+      position: absolute;
+      top: 0;
+      right: -24px;
+      content: '';
+    }
+  }
+  .skills__percent-item {
+    color: $white;
+    position: relative;
+
+    &::before,
+    &::after {
+      height: 1px;
+      top: 6px;
+      left: 48px;
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      width: 1057px;
+      border-top: 1px dashed #212230;
+    }
+
+    &::after {
+      width: 8px;
+      background-color: $black;
+    }
+  }
+
+  .skills__progress {
+    width: 6.32% !important;
+    text-align: center;
+  }
+  .skills__progress-text {
+    bottom: -32px;
+    width: 100%;
+  }
+}
+
+@include media('<=999px') {
+  .skills__progress {
+    height: 48px !important;
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+  .skills__progress-text {
+    bottom: 16px;
+    left: 32px;
+  }
+}
+
+@include media('<=575px') {
+  .skills {
+    padding: 24px 16px;
+  }
+}
+
+@include media('>=576px', '<=1099px') {
+  .skills {
+    padding: 39px;
+  }
+}
