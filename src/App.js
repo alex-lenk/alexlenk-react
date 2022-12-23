@@ -5,7 +5,8 @@ import logoTwo from './assets/img/logo/logo-2.svg'
 import Panel from './components/Panel'
 import NavMenu from './components/NavMenu'
 import Home from './pages/Home'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import NotFound from './pages/NotFound'
+import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom'
 
 function App() {
   const siteName = 'Александр Янковой - Frontend developer'
@@ -15,6 +16,8 @@ function App() {
       <NavMenu logo={logo} siteName={siteName}/>
       <Switch>
         <Route path='/' exact component={Home}/>
+        <Route path='/404' component={NotFound}/>
+        <Redirect to='/404'/>
       </Switch>
     </BrowserRouter>
   )

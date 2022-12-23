@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const Home = () => {
+  useEffect(()=> {
+    document.title = 'Александр Янковой - Frontend developer'
+  }, [])
   return (
     <div className="page__content container">
       <div className="home js-home">
