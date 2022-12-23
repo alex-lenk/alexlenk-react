@@ -13,7 +13,7 @@ const Portfolio = () => {
         <section className="portfolio__card">
           <div className="portfolio__card-top">
             <div className="portfolio__card-media">
-              <img src="../assets/img/company-logo/wineexpress.svg" alt=""/>
+              <img src={require('../assets/img/company-logo/wineexpress.svg').default} alt=""/>
             </div>
 
             <div className="portfolio__card-content">
@@ -114,7 +114,7 @@ const Portfolio = () => {
         <section className="portfolio__card">
           <div className="portfolio__card-top">
             <div className="portfolio__card-media">
-              <img src="../assets/img/company-logo/alianta.svg" alt=""/>
+              <img src={require('../assets/img/company-logo/alianta.svg').default} alt='' />
             </div>
 
             <div className="portfolio__card-content">
@@ -146,7 +146,7 @@ const Portfolio = () => {
         <section className="portfolio__card">
           <div className="portfolio__card-top">
             <div className="portfolio__card-media">
-              <img src="../assets/img/company-logo/mi-shop.svg" alt=""/>
+              <img src={require('../assets/img/company-logo/mi-shop.svg').default} alt=""/>
             </div>
 
             <div className="portfolio__card-content">
@@ -178,7 +178,7 @@ const Portfolio = () => {
         <section className="portfolio__card">
           <div className="portfolio__card-top">
             <div className="portfolio__card-media">
-              <img src="../assets/img/company-logo/azro.svg" alt=""/>
+              <img src={require('../assets/img/company-logo/azro.svg').default} alt=""/>
             </div>
 
             <div className="portfolio__card-content">

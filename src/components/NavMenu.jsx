@@ -13,7 +13,7 @@ const NavMenu = ({logo, siteName}) => {
 
       <nav className="nav-menu__list">
         <Link to="/portfolio" className="menu__item nav-menu__link">Портфолио</Link>
-        <Link to="#" className="menu__item nav-menu__link">Навыки</Link>
+        <Link to="/experience" className="menu__item nav-menu__link">Навыки</Link>
         <Link to="#" className="menu__item nav-menu__link">Опыт</Link>
         <Link to="#" className="menu__item nav-menu__link">Контакты</Link>
         <Link to="#" className="menu__item nav-menu__link">Блог</Link>

@@ -8,6 +8,7 @@ import NavMenu from './components/NavMenu'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Portfolio from './pages/Portfolio'
+import Experience from './pages/Experience'
 
 function App() {
   const siteName = 'Александр Янковой - Frontend developer'
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/portfolio' component={Portfolio}/>
+        <Route path='/experience' component={Experience}/>
         <Route path='/404' component={NotFound}/>
         <Redirect to='/404'/>
       </Switch>
