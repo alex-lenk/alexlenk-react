@@ -16,7 +16,7 @@ const NavMenu = ({logo, siteName}) => {
         <Link to="/skills" className="menu__item nav-menu__link">Навыки</Link>
         <Link to="/experience" className="menu__item nav-menu__link">Опыт</Link>
         <Link to="/contacts" className="menu__item nav-menu__link">Контакты</Link>
-        <Link to="#" className="menu__item nav-menu__link">Блог</Link>
+        <Link to="/blog" className="menu__item nav-menu__link">Блог</Link>
       </nav>
 
       <div>

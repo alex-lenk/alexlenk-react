@@ -11,6 +11,7 @@ import Portfolio from './pages/Portfolio'
 import Experience from './pages/Experience'
 import Skills from './pages/Skills'
 import Contacts from './pages/Contacts'
+import Blog from './pages/Blog'
 
 function App() {
   const siteName = 'Александр Янковой - Frontend developer'
@@ -24,6 +25,7 @@ function App() {
         <Route path='/experience' component={Experience}/>
         <Route path='/skills' component={Skills}/>
         <Route path='/contacts' component={Contacts}/>
+        <Route path='/blog' component={Blog}/>
         <Route path='/404' component={NotFound}/>
         <Redirect to='/404'/>
       </Switch>
