@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const Experience = () => {
+  useEffect(()=> {
+    document.title = 'Мой опыт работы'
+  }, [])
+
   return (
     <div className="page__content container">
       <h1>Мой опыт работы</h1>

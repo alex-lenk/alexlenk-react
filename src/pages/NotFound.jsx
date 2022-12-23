@@ -4,6 +4,7 @@ const NotFound = () => {
   useEffect(()=> {
     document.title = 'Страница не найдена - 404 ошибка'
   }, [])
+
   return (
     <div className="page__content container">
       <section className="not-found">
