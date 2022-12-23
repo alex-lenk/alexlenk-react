@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
 const NavMenu = ({logo, siteName}) => {
   const getYear = () => new Date().getFullYear()
@@ -11,11 +12,11 @@ const NavMenu = ({logo, siteName}) => {
       </a>
 
       <nav className="nav-menu__list">
-        <a href="#" className="menu__item nav-menu__link">Портфолио</a>
-        <a href="#" className="menu__item nav-menu__link">Навыки</a>
-        <a href="#" className="menu__item nav-menu__link">Опыт</a>
-        <a href="#" className="menu__item nav-menu__link">Контакты</a>
-        <a href="#" className="menu__item nav-menu__link">Блог</a>
+        <Link to="/portfolio" className="menu__item nav-menu__link">Портфолио</Link>
+        <Link to="#" className="menu__item nav-menu__link">Навыки</Link>
+        <Link to="#" className="menu__item nav-menu__link">Опыт</Link>
+        <Link to="#" className="menu__item nav-menu__link">Контакты</Link>
+        <Link to="#" className="menu__item nav-menu__link">Блог</Link>
       </nav>
 
       <div>
