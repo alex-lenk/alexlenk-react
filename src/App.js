@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom'
 import './assets/scss/styles.scss'
+import {getResponse} from './components/utils/getResponse'
+import ReactLoading from 'react-loading'
 import logo from './assets/img/logo/logo-1.svg'
 import logoTwo from './assets/img/logo/logo-2.svg'
 import Panel from './components/Panel'
@@ -14,18 +16,34 @@ import Contacts from './pages/Contacts'
 import Blog from './pages/Blog'
 
 function App() {
-  const siteName = 'Александр Янковой - Frontend developer'
+  const [pages, setPages] = useState()
+
+  useEffect(() => {
+    getResponse('http://localhost:3003/pages')
+      .then(data => setPages(data))
+  }, [])
+
+  if (!pages) return <ReactLoading type={'spinningBubbles'} height={'20%'} width={'20%'}/>
+  const general = pages.generalData
+
   return (
     <BrowserRouter>
-      <Panel logo={logoTwo} siteName={siteName}/>
-      <NavMenu logo={logo} siteName={siteName}/>
+      <Panel logo={logoTwo} siteName={general.siteName}/>
+      <NavMenu logo={logo} siteName={general.siteName}/>
+
       <Switch>
-        <Route path='/' exact component={Home}/>
+        <Route
+          path='/'
+          exact
+          render={() => {
+            return <Home data={pages.home}/>
+          }}
+        />
         <Route path='/portfolio' component={Portfolio}/>
         <Route path='/experience' component={Experience}/>
         <Route path='/skills' component={Skills}/>
         <Route path='/contacts' component={Contacts}/>
-        <Route path='/blog' component={Blog}/>
+        <Route path='/blog/:postId?' component={Blog}/>
         <Route path='/404' component={NotFound}/>
         <Redirect to='/404'/>
       </Switch>

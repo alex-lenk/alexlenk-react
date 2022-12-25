@@ -1,17 +1,17 @@
-import React, {useEffect} from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
+import {Link} from "react-router-dom";
 
-const Home = () => {
-  useEffect(()=> {
-    document.title = 'Александр Янковой - Frontend developer'
-  }, [])
+const Home = ({data}) => {
+  document.title = data.browserTitle
 
   return (
     <div className="page__content container">
       <div className="home js-home">
         <div className="home__content">
-          <div className="home__content-name">Александр Янковой</div>
+          <div className="home__content-name">{data.aboveTitle}</div>
 
-          <h1 className="home__content-title">Frontend developer</h1>
+          <h1 className="home__content-title">{data.pageTitle}</h1>
 
           <div className="home__content-phrase">
             Пишу легкий, чистый
@@ -22,7 +22,7 @@ const Home = () => {
             </div>
           </div>
 
-          <a href="#" className="home__content-btn js-home__content-btn btn__primary btn">Портфолио</a>
+          <Link to="/portfolio" className="home__content-btn js-home__content-btn btn__primary btn">Портфолио</Link>
         </div>
 
         <aside className="home__card">
@@ -77,6 +77,10 @@ const Home = () => {
       </div>
     </div>
   )
+}
+
+Home.propTypes = {
+  data: PropTypes.object,
 }
 
 export default Home

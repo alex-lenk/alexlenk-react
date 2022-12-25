@@ -1,0 +1,15 @@
+{
+  "pages": {
+    "generalData": {
+      "siteName": "Александр Янковой - Frontend developer",
+      "navMenuLogo": "./assets/img/logo/logo-1.svg",
+      "panelLogo": "./assets/img/logo/logo-2.svg"
+    },
+    "home": {
+      "browserTitle": "Александр Янковой - Frontend developer",
+      "browserDescription": "",
+      "pageTitle": "Frontend developer",
+      "aboveTitle": "Александр Янковой"
+    }
+  }
+}
