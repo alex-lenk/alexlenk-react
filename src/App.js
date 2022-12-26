@@ -32,17 +32,11 @@ function App() {
       <NavMenu logo={logo} siteName={general.siteName}/>
 
       <Switch>
-        <Route
-          path='/'
-          exact
-          render={() => {
-            return <Home data={pages.home}/>
-          }}
-        />
+        <Route path='/' exact render={() => <Home data={pages.home}/>}/>
         <Route path='/portfolio' component={Portfolio}/>
-        <Route path='/experience' component={Experience}/>
-        <Route path='/skills' component={Skills}/>
-        <Route path='/contacts' component={Contacts}/>
+        <Route path='/experience' render={() => <Experience data={pages.experience}/>}/>
+        <Route path='/skills' render={() => <Skills data={pages.skills}/>}/>
+        <Route path='/contacts' render={() => <Contacts dataGeneral={general.social} data={pages.contacts}/>}/>
         <Route path='/blog/:postId?' component={Blog}/>
         <Route path='/404' component={NotFound}/>
         <Redirect to='/404'/>

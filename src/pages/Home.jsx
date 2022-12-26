@@ -13,13 +13,7 @@ const Home = ({data}) => {
 
           <h1 className="home__content-title">{data.pageTitle}</h1>
 
-          <div className="home__content-phrase">
-            Пишу легкий, чистый
-            <span className="home__content-decor">&lt;code&gt;</span>
-
-            <div className="home__content-text" data-decor="// ">
-              Чтобы ваш сайт работал быстро и&nbsp;на&nbsp;полную.
-            </div>
+          <div className="home__content-phrase" dangerouslySetInnerHTML={{__html: data.phrase}}>
           </div>
 
           <Link to="/portfolio" className="home__content-btn js-home__content-btn btn__primary btn">Портфолио</Link>

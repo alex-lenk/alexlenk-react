@@ -1,13 +1,14 @@
 import React, {useEffect} from 'react'
+import PropTypes from "prop-types";
 
-const Skills = () => {
+const Skills = ({data}) => {
   useEffect(()=> {
-    document.title = 'Мои навыки'
+    document.title = data.browserTitle
   }, [])
 
   return (
     <div className="page__content container">
-      <h1>Мои навыки</h1>
+      <h1>{data.pageTitle}</h1>
 
       <div className="skills">
         <ul className="skills__percent list__un-styled">
@@ -64,6 +65,10 @@ const Skills = () => {
       </div>
     </div>
   )
+}
+
+Skills.propTypes = {
+  data: PropTypes.object,
 }
 
 export default Skills

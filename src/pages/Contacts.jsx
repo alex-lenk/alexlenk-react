@@ -1,30 +1,30 @@
 import React, {useEffect} from 'react'
+import PropTypes from 'prop-types'
+import SvgSprite from '../components/ui/svgSprite'
 
-const Contacts = () => {
-  useEffect(()=> {
-    document.title = 'Контакты'
+const Contacts = ({dataGeneral, data}) => {
+  useEffect(() => {
+    document.title = data.browserTitle
   }, [])
 
   return (
     <div className="page__content container">
-      <h1>Контакты</h1>
+      <h1>{data.pageTitle}</h1>
 
       <div className="contacts">
-        <div className="contacts__text">
-          Вы&#160;можете связаться со&#160;мной заполнив форму ниже, по&#160;телефону или через мессенджеры.
-        </div>
+        <div className="contacts__text" dangerouslySetInnerHTML={{__html: data.text}}/>
 
         <form className="contacts__form" action="#">
           <div className="contacts__form-title text__large-extra">Связь со мной</div>
 
           <div className="form__group">
             <input className="form__control form__error" type="text" id="name" placeholder="Имя"/>
-              <label className="form__label" htmlFor="name">Имя</label>
+            <label className="form__label" htmlFor="name">Имя</label>
           </div>
 
           <div className="form__group">
             <input className="form__control form__filed" type="email" id="email" placeholder="E-mail"/>
-              <label className="form__label" htmlFor="email">Email</label>
+            <label className="form__label" htmlFor="email">Email</label>
           </div>
 
           <div className="form__group">
@@ -38,30 +38,31 @@ const Contacts = () => {
         <aside className="contacts__info">
           <div className="contacts__info-container">
             <div className="contacts__info-hot">
-              <a className="contacts__info-phone" href="tel:+7 (968) 740 96-46">+7 (968) 740-96-46</a>
+              <a className="contacts__info-phone" href={`tel:${data.phone}`}>{data.phone}</a>
 
               <div className="social list__un-styled">
-                <a href="#" className="social__item" target="_blank" rel="nofollow">
-                  <svg className="social__icon">
-                    <use href="@img/icons.svg#tg"> </use>
-                  </svg>
-                </a>
-                <a href="#" className="social__item" target="_blank" rel="nofollow">
-                  <svg className="social__icon">
-                    <use href="@img/icons.svg#ws"> </use>
-                  </svg>
-                </a>
+                {Object.keys(dataGeneral).map(instance =>
+                  <a key={instance} href={dataGeneral[instance].link} className="social__item"
+                     rel="noopener nofollow">
+                    <SvgSprite icon={dataGeneral[instance].icon} className='social__icon'/>
+                  </a>
+                )}
               </div>
             </div>
 
-            <a href="mailto:Alex-yank@yandex.ru" className="contacts__info-text">Alex-yank@yandex.ru</a>
+            <a href={`mailto:${data.email}`} className="contacts__info-text">{data.email}</a>
           </div>
 
-          <span className="contacts__info-text">г. Москва, ул. Поклонная, 3, вход Е1</span>
+          <span className="contacts__info-text">{data.address}</span>
         </aside>
       </div>
     </div>
   )
+}
+
+Contacts.propTypes = {
+  dataGeneral: PropTypes.object,
+  data: PropTypes.object,
 }
 
 export default Contacts
