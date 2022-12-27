@@ -97,9 +97,77 @@
       "text": "Вы&#160;можете связаться со&#160;мной заполнив форму ниже, по&#160;телефону или через мессенджеры."
     },
     "portfolio": {
-      "0": {
-
+      "project": {
+        "0": {
+          "img": "",
+          "title": "",
+          "description": "",
+          "link": "",
+          "gitHub": "",
+          "stack": {
+            "scss": ""
+          }
+        }
       }
+    },
+    "blog": {
+      "browserTitle": "Блог",
+      "browserDescription": "",
+      "pageTitle": "Блог",
+      "pageContent": "<p>На странице блога, я публикуют личные заметки собранные в процессе работы и обучения программированию.</p><p>Мнения бываю разные, я лишь публикую, то&nbsp;что мне пригодится в дальнейшем, это как шпаргалка, только в открытом доступе. С радостью поделюсь, если кому-то будет интересно или полезно.</p>",
+      "posts": [
+        {
+          "id": "0",
+          "title": "Что такое Vuex? И зачем нужен vuex?",
+          "date": "02.01.2022",
+          "img": "",
+          "introText": "Что такое Vuex — это паттерн управления состоянием приложения и одновременно библиотека для Vue.js.",
+          "content": "<p>Что такое Vuex — это паттерн управления состоянием приложения и одновременно библиотека для Vue.js.</p>\n\n<p>Vuex служит централизованным хранилищем данных для всех компонентов приложения с правилами, гарантирующими, что состояние может быть изменено только предсказуемым образом.</p>\n\n<h2>Зачем нужен vuex?</h2>\n\n<p>Данная библиотека позволяет вынести слой логики работы вашего приложения в другую абстрактную оболочку.</p>\n\n<p>Во вью присeтствует обычный механизм, который позволяет передавать от родителя к ребенку какие-то пропсы (props).</p>\n\n<p>С помощью директивы v-bind передаем какие-то значения. Безусловно у данного подхода есть определенные проблемы. Когда у нас есть цепочка из&nbsp;<br>\nмножества вложенных компонентов, и&nbsp;например, мы хотим передавать от первого компонента к четвертому, то нам нужно через каждого ребенка передавать эти данные, что не&nbsp;удобно!</p>\n\n<p>В третьей версии vue js появились <strong>provide</strong> и <strong>inject</strong>, они позволяют в обход внутренних компонентов передавать данные между приложениями. Вьикс как раз и решает такую задачу, все кроется в масштабируемости проекта, если проект маленький, то нет смысла подключать библиотеку vuex.</p>\n\n<h2>Работа с Store</h2>\n\n<p>State зачастую это объект в js. Подключаем файл store.jsв корне папки исходника /src/&nbsp;</p>",
+          "category": "Vue-js",
+          "tag": [
+            "Vue"
+          ]
+        },
+        {
+          "id": "1",
+          "title": "Dropdown на jQuery - открытие и закрытие списков",
+          "date": "28.12.2021",
+          "img": "",
+          "introText": "Dropdown на jQuery - открытие и закрытие списков",
+          "content": " <p>\n    Открытие и закрытие списков на jQuery. Dropdown это простой выпадающий компонент jQ, который можно очень легко интегрировать и предоставить столько, сколько требуется.\n    Я буду благодарен за любую недостающую информацию о функциях.\n</p>\n\n<div class=\"cp_embed_wrapper\"><iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"300\" width=\"100%\" name=\"cp_embed_1\" scrolling=\"no\" src=\"https://codepen.io/alex-lenk/embed/mdBpGey?height=300&amp;default-tab=html%2Cresult&amp;slug-hash=mdBpGey&amp;user=alex-lenk&amp;name=cp_embed_1\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_mdBpGey\"></iframe></div>\n<script async=\"\" src=\"https://mc.yandex.ru/metrika/tag.js\"></script><script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>",
+          "category": "jQuery",
+          "tag": [
+            "Dropdown",
+            "jQuery"
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Аккордеон на чистом JavaScript - простой и понятный",
+          "date": "25.12.2021",
+          "img": "https://alexlenk.ru/assets/cache_image/25-12-2021/iq09ub-akkordeon-na-javascript_180x180_0ba.jpg",
+          "introText": "Нашел и доработал JS скрипт аккордеон. Он прост и понятен и написан на чистом JavaScript.",
+          "content": "<p>\n    Нашел и доработал JS скрипт аккордеон. Он прост и понятен и написан на чистом JavaScript.\n</p>\n\n<p>\n    Есть и другие варианты, но этот для простой страницы идеален!\n</p>\n\n<div class=\"cp_embed_wrapper\"><iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"300\" width=\"100%\" name=\"cp_embed_1\" scrolling=\"no\" src=\"https://codepen.io/alex-lenk/embed/RwLjMad?height=300&amp;theme-id=dark&amp;default-tab=html%2Cresult&amp;slug-hash=RwLjMad&amp;user=alex-lenk&amp;name=cp_embed_1\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_RwLjMad\"></iframe></div>\n\n<script async=\"\" src=\"https://mc.yandex.ru/metrika/tag.js\"></script><script async=\"\" src=\"https://cpwebassets.codepen.io/assets/embed/ei.js\"></script>",
+          "category": "JavaScript",
+          "tag": [
+            "JavaScript",
+            "accordion"
+          ]
+        },
+        {
+          "id": "3",
+          "title": "js TAB - ТАБы на чистом JavaScript",
+          "date": "20.11.2021",
+          "img": "https://alexlenk.ru/assets/cache_image/07-12-2021/0h2smn-01_180x180_0ba.jpg",
+          "introText": "Реализация TAB на чистом JavaScript без jQuery плангинов и прощих зависимойте.",
+          "content": "<p>Реализация TAB на чистом JavaScript без jQuery плангинов и прощих зависимойте.</p>\n\n<p>\n    Табы - вкладки это интерфейс на страницы для рационального размещения большого количества контента.\n</p>\n\n\n<p>\n    javaScript, HTML и CSS код\n</p>\n\n<div class=\"cp_embed_wrapper\"><iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"300\" width=\"100%\" name=\"cp_embed_1\" scrolling=\"no\" src=\"https://codepen.io/alex-lenk/embed/KKXzdWv?height=300&amp;theme-id=dark&amp;default-tab=html%2Cresult&amp;slug-hash=KKXzdWv&amp;user=alex-lenk&amp;name=cp_embed_1\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_KKXzdWv\"></iframe>",
+          "category": "JavaScript",
+          "tag": [
+            "JavaScript",
+            "TAB"
+          ]
+        }
+      ]
     }
   }
 }

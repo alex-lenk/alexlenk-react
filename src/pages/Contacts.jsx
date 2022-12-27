@@ -61,8 +61,8 @@ const Contacts = ({dataGeneral, data}) => {
 }
 
 Contacts.propTypes = {
-  dataGeneral: PropTypes.object,
-  data: PropTypes.object,
+  dataGeneral: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 }
 
 export default Contacts

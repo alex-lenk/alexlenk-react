@@ -45,55 +45,55 @@ const Portfolio = () => {
                 <svg style={{fill: '#ffffff'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                SCSS 11.1
+                SCSS 11.1%
               </li>
               <li className="stack__item stack__item--html">
                 <svg style={{fill: '#ffffff'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                HTML 11.1
+                HTML 11.1%
               </li>
               <li className="stack__item stack__item--css">
                 <svg style={{fill: '#C6538C'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                CSS 11.1
+                CSS 11.1%
               </li>
               <li className="stack__item stack__item--js">
                 <svg style={{fill: '#F1E05A'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                JavaScript 11.1
+                JavaScript 11.1%
               </li>
               <li className="stack__item stack__item--jsx">
                 <svg style={{fill: '#61dafb'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                JSX 11.1
+                JSX 11.1%
               </li>
               <li className="stack__item stack__item--vue">
                 <svg style={{fill: '#41B883'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                Vue 11.1
+                Vue 11.1%
               </li>
               <li className="stack__item stack__item--angular">
                 <svg style={{fill: '#1976d2'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                Angular 11.1
+                Angular 11.1%
               </li>
               <li className="stack__item stack__item--node">
                 <svg style={{fill: '#64DE64'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                Node 11.1
+                Node 11.1%
               </li>
               <li className="stack__item stack__item--php">
                 <svg style={{fill: '#4F5B93'}} aria-hidden="true" viewBox="0 0 16 16" className="stack__item-icon">
                   <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                 </svg>
-                PHP 11.1
+                PHP 11.1%
               </li>
             </ul>
           </div>

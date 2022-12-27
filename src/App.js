@@ -37,7 +37,7 @@ function App() {
         <Route path='/experience' render={() => <Experience data={pages.experience}/>}/>
         <Route path='/skills' render={() => <Skills data={pages.skills}/>}/>
         <Route path='/contacts' render={() => <Contacts dataGeneral={general.social} data={pages.contacts}/>}/>
-        <Route path='/blog/:postId?' component={Blog}/>
+        <Route path='/blog/:postId?' render={() => <Blog data={pages.blog}/>}/>
         <Route path='/404' component={NotFound}/>
         <Redirect to='/404'/>
       </Switch>
