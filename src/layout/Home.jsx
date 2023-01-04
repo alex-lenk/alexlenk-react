@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom'
 
 const Home = ({data}) => {
   document.title = data.browserTitle
@@ -13,8 +13,7 @@ const Home = ({data}) => {
 
           <h1 className="home__content-title">{data.pageTitle}</h1>
 
-          <div className="home__content-phrase" dangerouslySetInnerHTML={{__html: data.phrase}}>
-          </div>
+          <div className="home__content-phrase" dangerouslySetInnerHTML={{__html: data.phrase}} />
 
           <Link to="/portfolio" className="home__content-btn js-home__content-btn btn__primary btn">Портфолио</Link>
         </div>

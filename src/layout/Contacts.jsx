@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import PropTypes from 'prop-types'
-import SvgSprite from '../components/ui/svgSprite'
+import SvgSprite from '../components/common/svgSprite'
 
 const Contacts = ({dataGeneral, data}) => {
   useEffect(() => {

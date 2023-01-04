@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start + server": "concurrently \"npm run server\" \"npm start\"",
-    "start": "react-scripts start",
+    "start": "set PORT=3006 && react-scripts start",
     "server": "json-server -w server/db.json -p 3003",
     "build": "react-scripts build",
     "test": "react-scripts test",
