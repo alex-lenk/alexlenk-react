@@ -1,9 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
+//import {widthScreen} from '../components/utils/const'
 
 const Home = ({data}) => {
   document.title = data.browserTitle
+
+/*  const jsHomeEl = document.body.querySelector('.js-home')
+  const homeContentBtn = document.body.querySelector('.js-home__content-btn')
+  if (widthScreen <= 575) {
+    jsHomeEl.append(homeContentBtn)
+  }*/
 
   return (
     <div className="page__content container">

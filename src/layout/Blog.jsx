@@ -12,8 +12,6 @@ const Blog = ({data}) => {
     document.title = data.browserTitle
   }, [])
 
-
-
   return (
     <div className="page__content container">
       {postId ? <PostPage id={postId}/> : <PostsListPage data={data}/>}
