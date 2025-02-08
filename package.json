@@ -1,0 +1,40 @@
+{
+  "name": "alexlenk-react",
+  "version": "6.0.7",
+  "private": true,
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production && node server/index.js",
+    "serve": "cross-env NODE_ENV=development nodemon server/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^5.3.0",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "cyrillic-to-translit-js": "^3.2.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "slugify": "^1.6.6",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.2"
+  },
+  "author": "alex-lenk",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-lenk/alexlenk-react"
+  }
+}

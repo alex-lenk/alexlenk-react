@@ -1,0 +1,11 @@
+@use 'sass:math';
+
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+
+@function get-vw($target, $maxBreakpoint) {
+  $vw-context: $maxBreakpoint * 0.01 * 1px;
+  @return math.div($target, $vw-context) * 1vw;
+}

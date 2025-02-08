@@ -1,0 +1,54 @@
+.navbar__toggle {
+  height: 32px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.navbar__toggle-decor {
+  height: 3px;
+  width: 24px;
+  margin: auto;
+  position: relative;
+  background-color: $textColor;
+  border-radius: 1px;
+  transition-duration: .2s;
+  transition-delay: .2s;
+
+  &::before,
+  &::after {
+    height: 3px;
+    width: 24px;
+    left: 0;
+    border-radius: 1px;
+    position: absolute;
+    background-color: $textColor;
+    transition-duration: .2s;
+    transition: transform .2s, top .2s .2s;
+    content: '';
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
+  }
+}
+
+@include media('>=768px') {
+  .navbar__toggle {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: -4px;
+  }
+}
+
+@include media('<=767px') {
+  .navbar__toggle {
+    width: 42px;
+    margin-right: -8px;
+  }
+}

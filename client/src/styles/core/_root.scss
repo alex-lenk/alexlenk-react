@@ -1,0 +1,92 @@
+:root {
+  --al-body-color: #{$textColor};
+  --al-body-bg: #{$bgPrimary};
+  --al-font-din: #{$familyDin};
+  --al-font-sans-serif: #{$fontFamilyIbm}, -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --al-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --al-body-font-family: var(--al-font-sans-serif);
+  --al-font-bold: #{$fontFamilyDin};
+  --al-body-font-size: 1rem;
+  --al-body-font-weight: 400;
+  --al-body-line-height: 1.6;
+
+  --al-primary: #{$primary};
+  --al-primary2: #{$primary2};
+  --al-secondary: #{$secondary};
+  --al-secondary-2: #{$secondary2};
+  --al-secondary-3: #{$secondary3};
+
+  --al-text-color-3: #{$textColor3};
+
+  --al-primary-home-name: #{$primaryHomeName};
+  --al-gradient: #{$gradient};
+
+  --al-bg-black: #{$black};
+  --al-bg-dark-light: #{$bgDarkLight};
+  --al-bg-dark-light-stroke: #{$bgDarkLightStroke};
+  --al-bg-dark-stroke: #{$bgDarkStroke};
+  --al-bg-dark: #{$bgDark};
+
+  --al-white: #{$white};
+  --al-blue-light: #{$blueLightColor};
+
+/*
+  --al-blue: #0d6efd;
+  --al-indigo: #6610f2;
+  --al-purple: #6f42c1;
+  --al-pink: #d63384;
+  --al-red: #dc3545;
+  --al-orange: #fd7e14;
+  --al-yellow: #ffc107;
+  --al-green: #198754;
+  --al-teal: #20c997;
+  --al-cyan: #0dcaf0;
+  --al-black: #000;
+  --al-gray: #6c757d;
+  --al-gray-dark: #343a40;
+  --al-gray-100: #f8f9fa;
+  --al-gray-200: #e9ecef;
+  --al-gray-300: #dee2e6;
+  --al-gray-400: #ced4da;
+  --al-gray-500: #adb5bd;
+  --al-gray-600: #6c757d;
+  --al-gray-700: #495057;
+  --al-gray-800: #343a40;
+  --al-gray-900: #212529;
+  --al-secondary: #6c757d;
+  --al-success: #198754;
+  --al-info: #0dcaf0;
+  --al-warning: #ffc107;
+  --al-danger: #dc3545;
+  --al-light: #f8f9fa;
+  --al-dark: #212529;
+  --al-primary-rgb: 13, 110, 253;
+  --al-secondary-rgb: 108, 117, 125;
+  --al-success-rgb: 25, 135, 84;
+  --al-info-rgb: 13, 202, 240;
+  --al-warning-rgb: 255, 193, 7;
+  --al-danger-rgb: 220, 53, 69;
+  --al-light-rgb: 248, 249, 250;
+  --al-dark-rgb: 33, 37, 41;
+  --al-white-rgb: 255, 255, 255;
+  --al-black-rgb: 0, 0, 0;
+  --al-body-color-rgb: 33, 37, 41;
+  --al-body-bg-rgb: 255, 255, 255;
+  --al-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+  --al-border-width: 1px;
+  --al-border-style: solid;
+  --al-border-color: #dee2e6;
+  --al-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --al-border-radius: 0.375rem;
+  --al-border-radius-sm: 0.25rem;
+  --al-border-radius-lg: 0.5rem;
+  --al-border-radius-xl: 1rem;
+  --al-border-radius-2xl: 2rem;
+  --al-border-radius-pill: 50rem;
+  --al-link-color: #0d6efd;
+  --al-link-hover-color: #0a58ca;
+  --al-code-color: #d63384;
+  --al-highlight-bg: #fff3cd;
+  */
+}

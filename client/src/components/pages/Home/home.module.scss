@@ -1,0 +1,117 @@
+@import '~styles/libs/include-media.scss';
+
+.name {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--al-primary);
+  background-color: var(--al-primary-home-name);
+  border: 1px solid rgba(177, 203, 255, .04);
+}
+
+.title {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.phrase {
+  margin-bottom: 40px;
+}
+
+.decor {
+  color: var(--al-secondary);
+}
+
+.text::before {
+  content: attr(data-decor);
+}
+
+.btn {
+  max-width: 167px;
+  display: flex;
+}
+
+@include media('>=576px') {
+  .title {
+    margin-bottom: 32px;
+  }
+}
+
+@include media('>=901px') {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    max-width: 57%;
+  }
+}
+
+@include media('>=1100px') {
+  .name {
+    font-size: 20px;
+    max-width: 284px;
+    height: 64px;
+  }
+  .title {
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: .03em;
+  }
+  .phrase {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .text {
+    margin-top: 16px;
+  }
+}
+
+@include media('<=1099px') {
+  .phrase {
+    line-height: 28px;
+  }
+  .text {
+    margin-top: 8px;
+  }
+}
+
+@include media('<=900px') {
+  .content {
+    margin-bottom: 48px;
+  }
+}
+
+@include media('<=575px') {
+  .content {
+    text-align: center;
+  }
+  .name {
+    max-width: 191px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    margin-bottom: 24px;
+    font-size: get-vw(48px, 375);
+    line-height: get-vw(52px, 375);
+  }
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include media('>=576px', '<=1099px') {
+  .name {
+    max-width: 228px;
+    height: 52px;
+  }
+  .title {
+    font-size: get-vw(80px, 1100);
+    line-height: get-vw(80px, 1100);
+  }
+}

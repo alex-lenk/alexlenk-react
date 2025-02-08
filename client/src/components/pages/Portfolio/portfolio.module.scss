@@ -1,0 +1,120 @@
+@import '~styles/libs/include-media.scss';
+
+.card {
+  position: relative;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.card_top {
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.card_media {
+  order: 1;
+  flex-shrink: 0;
+  padding: 32px;
+  width: 128px;
+  height: 128px;
+  background: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.card_content {
+  padding-right: 24px;
+  flex-grow: 1;
+}
+
+.card_title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--al-font-din);
+}
+
+.card_desc {
+  line-height: 26px;
+}
+
+.card_stack {
+  margin-bottom: 32px;
+}
+
+.card_footer {
+  display: flex;
+  align-items: center;
+}
+
+.card_btn {
+  margin-right: auto;
+}
+
+.card_icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--al-secondary);
+}
+
+.portfolio__stack {
+  margin-bottom: 32px;
+}
+
+.portfolio__stack-title {
+  margin-bottom: 16px;
+}
+
+@include media('>=576px') {
+  .portfolio {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include media('>=768px') {
+  .card {
+    padding: 40px 40px 48px;
+  }
+  .card_btn {
+    max-width: 206px;
+  }
+}
+
+@include media('<=991px') {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .card_github {
+    right: 40px;
+    top: 40px;
+    position: absolute;
+  }
+}
+
+@include media('<=767px') {
+  .card {
+    padding: 24px;
+  }
+}
+
+@include media('<=575px') {
+  .card:not(:last-of-type) {
+    margin-bottom: 32px;
+  }
+}
+
+@include media('>=576px', '<=767px') {
+  .card_github {
+    right: 12px;
+    top: 16px;
+  }
+}

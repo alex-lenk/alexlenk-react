@@ -1,0 +1,11 @@
+.blog__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog__tags-item {
+  padding: 4px 8px;
+  font-size: 14px;
+  color: $secondary2;
+  transition: color .2s ease-in-out;
+}

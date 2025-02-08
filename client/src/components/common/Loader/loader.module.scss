@@ -1,0 +1,22 @@
+.loader {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 10px solid var(--al-primary);
+  border-top-color: var(--al-body-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

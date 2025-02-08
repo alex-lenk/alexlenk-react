@@ -1,0 +1,26 @@
+body {
+  scrollbar-width: 8px;
+  scrollbar-color: $primary #d6d6d6;
+  // Chrome, Edge, and Safari
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: $white;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(#000, 20%);
+    border-radius: 4px;
+    background: #eee;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 0 none #fff;
+    background-color: lighten($bgPrimary, 10%);
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+      background-color: $textColor3;
+    }
+  }
+}

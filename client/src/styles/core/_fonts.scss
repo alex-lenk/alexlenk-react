@@ -1,0 +1,23 @@
+@font-face {
+  font-family: $fontFamilyDin;
+  font-display: swap;
+  src: url('~assets/fonts/dinprobold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontFamilyIbm;
+  font-display: swap;
+  src: url('~assets/fonts/ibmplexmono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontFamilyIbm;
+  font-display: swap;
+  src: url('~assets/fonts/ibmplexmonolight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}

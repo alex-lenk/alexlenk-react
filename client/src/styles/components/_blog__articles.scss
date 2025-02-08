@@ -1,0 +1,12 @@
+.blog__articles {
+  padding-left: 8px;
+}
+
+.blog__articles-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.blog__articles-link {
+  color: $blueLightColor;
+  transition: color .2s ease-in-out;
+}

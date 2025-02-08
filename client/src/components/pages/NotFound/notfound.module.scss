@@ -1,0 +1,64 @@
+@import '~styles/libs/include-media.scss';
+
+.notfound {
+  width: 100%;
+  margin: auto;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  box-shadow: 0 30px 45px var(--al-bg-dark);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.notfound_wrap {
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  border-radius: 8px;
+}
+
+.notfound_error {
+  margin-bottom: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--al-white);
+}
+
+.notfound_title {
+  margin-bottom: 40px;
+  color: var(--al-blue-light);
+  line-height: 32px;
+  font-weight: 400;
+  font-family: var(--al-font-sans-serif);
+}
+
+@include media('>=576px') {
+  .notfound {
+    padding: 40px;
+    max-width: 520px;
+  }
+  .notfound_wrap {
+    padding: 40px;
+  }
+  .notfound_error {
+    font-size: 200px;
+  }
+  .notfound_title {
+    font-size: 24px;
+  }
+}
+
+@include media('<=575px') {
+  .notfound {
+    padding: 24px;
+  }
+  .notfound_wrap {
+    padding: 24px;
+  }
+  .notfound_error {
+    font-size: 80px;
+  }
+  .notfound_title {
+    font-size: 20px;
+  }
+}

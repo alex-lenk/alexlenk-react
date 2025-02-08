@@ -1,0 +1,52 @@
+.page {
+  min-height: 100%;
+  display: flex;
+  background: url('~assets/img/bg.png') no-repeat center;
+  background-size: cover;
+}
+
+.page__content {
+  position: relative;
+  align-self: center;
+}
+
+@include media('>=1510px') {
+  .page {
+    padding-left: 230px;
+  }
+  .page__content {
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+}
+
+@include media('>=1708px') {
+  .page {
+    padding-right: 230px;
+  }
+}
+
+@include media('<=575px') {
+  .page {
+    padding-top: 92px;
+    padding-bottom: 52px;
+  }
+}
+
+@include media('>=576px', '<=1099px') {
+  .page {
+    padding-top: 110px;
+  }
+}
+
+@include media('>=1100px', '<=1510px') {
+  .page {
+    padding-top: 140px;
+  }
+}
+
+@include media('>=576px', '<=1509px') {
+  .page {
+    padding-bottom: 70px;
+  }
+}

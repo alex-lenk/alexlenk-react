@@ -1,0 +1,70 @@
+@import '~styles/libs/include-media.scss';
+
+.pagination {
+  padding: 16px;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.prev,
+.next {
+  width: 32px;
+  height: 32px;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  border-radius: 4px;
+  display: flex;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: #151c28;
+  }
+}
+
+.prev {
+  margin-right: 16px;
+}
+
+.next {
+  margin-left: 16px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  fill: var(--al-blue-light);
+}
+
+.icon_next {
+  transform: rotate(180deg);
+}
+
+.item {
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+
+  &:hover {
+    color: var(--al-white);
+    background-color: #151c28;
+  }
+}
+
+.current {
+  pointer-events: none;
+  color: var(--al-white);
+  background-color: #151c28;
+}

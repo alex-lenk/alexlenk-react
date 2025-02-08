@@ -1,0 +1,83 @@
+@import '~styles/libs/include-media.scss';
+
+.card {
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  box-shadow: 0 30px 45px rgba(16, 23, 34, .35);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.top {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.projects {
+  margin-right: auto;
+  font-family: var(--al-font-din);
+  font-weight: 700;
+}
+
+.container {
+  background-color: var(--al-bg-dark);
+  border: 1px solid var(--al-bg-dark-stroke);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.code {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+@include media('>=576px') {
+  .projects {
+    font-size: 20px;
+  }
+}
+
+@include media('>=901px') {
+  .card {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+}
+
+@include media('>=1100px') {
+  .card {
+    width: 40.1%;
+    padding: 32px;
+  }
+  .container {
+    padding: 32px;
+  }
+}
+
+@include media('<=1099px') {
+  .card {
+    width: 100%;
+    max-width: 423px;
+    padding: 24px;
+  }
+}
+
+@include media('<=575px') {
+  .info {
+    font-size: 14px;
+  }
+  .card {
+    margin-bottom: 36px;
+  }
+  .container {
+    padding: 22px 12px 22px 16px;
+  }
+}
+
+@include media('>=576px', '<=1099px') {
+  .container {
+    padding: 22px;
+  }
+}

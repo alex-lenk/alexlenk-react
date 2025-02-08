@@ -1,0 +1,100 @@
+.stack__progress {
+  margin-bottom: 16px;
+  height: 8px;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+}
+
+.stack__progress-item {
+  &:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+/*
+.stack__progress-html {
+}
+
+.stack__progress-css {
+}
+
+.stack__progress-scss {
+}
+
+.stack__progress-js {
+}
+
+.stack__progress-jsx {
+}
+
+.stack__progress-vue {
+}
+
+.stack__progress-angular {
+}
+
+.stack__progress-node {
+}
+
+.stack__progress-php {
+}
+*/
+
+.stack__list {
+  line-height: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stack__item {
+  margin-bottom: 8px;
+  margin-right: 32px;
+  color: $blueLightColor;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.stack__item-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  margin-left: -4px;
+  flex-shrink: 0;
+}
+
+/*
+.stack__item--html {
+}
+
+.stack__item--css {
+}
+
+.stack__item--scss {
+}
+
+.stack__item--js {
+}
+
+.stack__item--jsx {
+}
+
+.stack__item--vue {
+}
+
+.stack__item--angular {
+}
+
+.stack__item--node {
+}
+
+.stack__item--php {
+}
+*/

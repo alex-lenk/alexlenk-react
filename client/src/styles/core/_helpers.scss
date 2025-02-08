@@ -1,0 +1,83 @@
+.text__large-extra {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text__large {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.text__small,
+.text__small-light {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text__small-light {
+  font-weight: 300;
+}
+
+.list__unstyled {
+  @extend %list__unstyled;
+}
+
+.text__white {
+  color: $white;
+}
+
+.text__blue-light {
+  color: $blueLightColor;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.ml-2{
+  margin-left:  1rem;
+}
+
+.ml-3 {
+  margin-left:  2rem;
+}
+
+.ml-4 {
+  margin-left:  3rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2{
+  margin-top:  1rem;
+}
+
+.mt-3 {
+  margin-top:  2rem;
+}
+
+.mt-4 {
+  margin-top:  3rem;
+}
+
+.mb-4 {
+  margin-bottom:  3rem;
+}
+
+.d-flex {
+  display: flex;
+}

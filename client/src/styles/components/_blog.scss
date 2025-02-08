@@ -1,0 +1,57 @@
+@import 'blog__card';
+@import 'blog__boxed';
+@import 'blog__tags';
+@import 'blog__articles';
+
+.blog__title {
+  width: 100%;
+}
+
+.blog__list {
+  margin-bottom: 40px;
+}
+
+.blog__side-box {
+  margin-bottom: 40px;
+}
+
+.blog__side-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.blog__article {
+  color: $blueLightColor;
+
+  h6, h5, h4, h3, h2, h1 {
+    color: $white;
+  }
+}
+
+.blog__content {
+  margin-top: 24px;
+}
+
+@include media('>=992px') {
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog__container {
+    width: 68.5%;
+    padding-right: 32px;
+    flex: 0 0 auto;
+  }
+  .blog__side {
+    padding-top: 102px;
+    width: 31.5%;
+    flex: 0 0 auto;
+  }
+}
+
+@include media('<=991px') {
+  .blog__container {
+    margin-bottom: 40px;
+  }
+}

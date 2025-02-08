@@ -1,0 +1,28 @@
+@import '~styles/core/extend';
+
+.list {
+  margin-bottom: 32px;
+  display: flex;
+  color: var(--al-text-color-3);
+
+  @extend %list__unstyled;
+}
+
+.item {
+  display: flex;
+
+  &:not(:last-child)::after {
+    margin-left: 4px;
+    margin-right: 4px;
+    content: '_';
+  }
+}
+
+.link {
+  color: var(--al-blue-light);
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: var(--al-white);
+  }
+}

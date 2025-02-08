@@ -1,0 +1,30 @@
+.tab__nav {
+  display: inline-flex;
+  height: 52px;
+  border: 1px solid $secondary2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab__nav-item {
+  padding: 6px 24px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: var(--al-font-din);
+  display: inline-flex;
+  align-items: center;
+  cursor: default;
+  border-radius: inherit;
+
+  &:not(.tab__nav-item--active) {
+    cursor: pointer;
+  }
+}
+
+.tab__nav-item--active {
+  background-color: $secondary2;
+}
+
+.tab__content:not(.tab__content--active) {
+  display: none;
+}

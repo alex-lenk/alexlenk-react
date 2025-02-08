@@ -1,0 +1,131 @@
+.navbar__menu {
+  height: 100%;
+  width: 230px;
+  padding: 40px 30px;
+  background-color: rgba(25, 33, 48, .95);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  transition: transform .2s ease-in-out;
+}
+
+.navbar__menu-link {
+  height: 72px;
+  margin-left: -30px;
+  margin-right: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $textColor;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: $bgPrimary;
+  }
+}
+
+.navbar__menu-github {
+  width: 60px;
+  height: 16px;
+}
+
+.navbar__menu-footer {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: $blueLightColor;
+  text-align: center;
+}
+
+@include media('>=1510px') {
+  .navbar__menu {
+    left: 0;
+    will-change: auto;
+  }
+  .navbar__menu-logo {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@include media('<=1510px') {
+  .navbar__open {
+    .navbar__menu {
+      transform: translateX(0);
+    }
+
+    .navbar__toggle-decor {
+      transition-duration: .1s;
+      transition-delay: .2s;
+      background: 0 0;
+
+      &::after,
+      &::before {
+        top: 0;
+        width: 30px;
+        left: -3px;
+        border-radius: 20px;
+      }
+
+      &::before {
+        transition: top .2s, transform .2s .2s;
+        transform: rotateZ(-45deg);
+      }
+
+      &::after {
+        transition: top .4s, transform .2s .2s;
+        transform: rotateZ(45deg);
+      }
+    }
+  }
+  .navbar__menu {
+    padding-top: 0;
+    right: 0;
+    will-change: transform;
+    transform: translateX(100%);
+    backdrop-filter: blur(4px);
+
+    &::before {
+      width: 100%;
+      height: 1px;
+      display: block;
+      content: '';
+    }
+  }
+  .navbar__menu-logo {
+    display: none;
+  }
+}
+
+@include media('<=767px') {
+  .navbar__menu {
+    height: calc(100% - 52px);
+    top: 52px;
+  }
+}
+
+@include media('>=768px', '<=1510px') {
+  .navbar__menu {
+    height: calc(100% - 70px);
+    top: 70px;
+  }
+}
+
+@media (max-height: 650px) {
+  .navbar__menu-link {
+    height: 56px;
+  }
+}
+
+@media (max-height: 450px) {
+  .navbar__menu {
+    padding-bottom: 16px;
+  }
+  .navbar__menu-link {
+    height: 42px;
+  }
+}

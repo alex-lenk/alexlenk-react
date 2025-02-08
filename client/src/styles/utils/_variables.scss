@@ -1,0 +1,29 @@
+$white: #fff !default;
+$blue: #345CAC;
+
+$bgPrimary: #151c28 !default;
+$black: #30313f;
+$bgDark: rgba(16, 23, 34, .5) !default;
+$bgDarkStroke: rgba(31, 42, 58, .5) !default;
+$bgDarkLight: rgba(25, 33, 48, .4) !default;
+$bgDarkLightStroke: rgba(38, 46, 63, .4) !default;
+
+
+$textColor: #D9DFE9 !default;
+$blueLightColor: #848E9F !default;
+$textColor3: #4A4C61 !default;
+$primary: #5E92FD !default;
+$primary-hover: #3D61AB !default;
+$primaryHomeName: rgba($primary, .04) !default;
+$primary2: #6D55FF !default;
+$gradient: linear-gradient(135deg, $primary 0%, $primary2 100%);
+//@todo не используется $gradientRevert: linear-gradient(135deg, $primary2 0%, $primary 100%);
+$secondary: #F37A53 !default;
+$secondary2: #48B99C !default;
+$secondary3: #CA64BF !default;
+$error: #A40F45;
+
+
+$fontFamilyDin: 'din';
+$fontFamilyIbm: 'ibm';
+$familyDin: $fontFamilyDin, $fontFamilyIbm, Arial, sans-serif;

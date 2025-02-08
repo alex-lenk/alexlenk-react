@@ -1,0 +1,49 @@
+@import '~styles/libs/include-media.scss';
+
+.info {
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
+  box-shadow: 0 30px 45px var(--al-bg-dark);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.info__container {
+  margin-bottom: 24px;
+}
+
+.info__hot {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.info__phone {
+  margin-right: 32px;
+  font-weight: 700;
+  color: var(--al-body-color)
+}
+
+@include media('>=992px') {
+  .info {
+    width: 50%;
+    padding: 40px;
+  }
+  .text {
+    margin-bottom: 24px;
+  }
+  .info__phone {
+    font-size: 20px;
+  }
+}
+
+@include media('<=991px') {
+  .info {
+    padding: 16px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+  .info__text {
+    font-size: 14px;
+  }
+}

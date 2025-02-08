@@ -1,0 +1,125 @@
+@import '~styles/libs/include-media.scss';
+
+.skills {
+  line-height: 1;
+  background-color: var(--al-bg-dark);
+  border: 1px solid var(--al-bg-dark-stroke);
+  font-size: 14px;
+  overflow: hidden;
+
+  @include media('>=1000px') {
+    height: 629px;
+    padding: 48px;
+    display: flex;
+  }
+
+  @include media('<=575px') {
+    padding: 24px 16px;
+  }
+
+  @include media('>=576px', '<=1099px') {
+    padding: 39px;
+  }
+}
+
+.percent {
+  display: none;
+
+  @include media('>=1000px') {
+    flex-shrink: 0;
+    margin-right: 71px;
+    padding-bottom: 26px;
+    height: 100%;
+    display: inline-flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      width: 1px;
+      height: 95%;
+      background-color: var(--al-bg-black);
+      position: absolute;
+      top: 0;
+      right: -24px;
+      content: '';
+    }
+  }
+}
+
+.percent__row {
+  @include media('>=1000px') {
+    color: var(--al-white);
+    position: relative;
+
+    &::before,
+    &::after {
+      height: 1px;
+      top: 6px;
+      left: 48px;
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      width: 1057px;
+      border-top: 1px dashed #212230;
+    }
+
+    &::after {
+      width: 8px;
+      background-color: var(--al-bg-black);
+    }
+  }
+}
+
+.progress {
+  @include media('>=1000px') {
+    height: 100%;
+    padding-bottom: 34px;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.progress__col {
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    height: 100%;
+    background: var(--al-gradient);
+    border-radius: 4px;
+    display: block;
+    content: '';
+  }
+
+  @include media('>=1000px') {
+    width: 6.32% !important;
+    text-align: center;
+  }
+  @include media('<=999px') {
+    height: 48px !important;
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.progress__label {
+  position: absolute;
+
+  @include media('>=1000px') {
+    bottom: -32px;
+    width: 100%;
+  }
+  @include media('<=999px') {
+    bottom: 16px;
+    left: 32px;
+  }
+}
